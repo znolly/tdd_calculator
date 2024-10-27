@@ -16,8 +16,10 @@ public class CalculatorTest {
      *
      * Called before every test case method.
      */
+    Calculator calculator;
     @BeforeEach
     public void setUp() {
+        calculator = new Calculator();
     }
 
     /**
@@ -31,15 +33,19 @@ public class CalculatorTest {
     
     @Test
     public void test2add2equals4() {
-        Calculator calculator = new Calculator();
         int result = calculator.add(2, 2);
-        assertEquals(4, result); // Validar que 2 + 2 = 4
+        assertEquals(4, result);
     }
     
     @Test
     public void test2add5equals7() {
-        Calculator calculator = new Calculator();
         int result = calculator.add(2, 5);
         assertEquals(7, result);
+    }
+    
+    @Test
+    public void testSubstract() {
+        int result = calculator.substract(5, 3);
+        assertEquals(2, result);
     }
 }
