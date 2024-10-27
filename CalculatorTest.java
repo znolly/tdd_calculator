@@ -44,7 +44,7 @@ public class CalculatorTest {
     }
     
     @Test
-    public void testSubstract() {
+    public void testSubstract5And3Is2() {
         int result = calculator.substract(5, 3);
         assertEquals(2, result);
     }
