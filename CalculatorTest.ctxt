@@ -12,4 +12,6 @@ comment4.params=
 comment4.target=void\ test2add5equals7()
 comment5.params=
 comment5.target=void\ testSubstract5And3Is2()
-numComments=6
+comment6.params=
+comment6.target=void\ testSubstract3And5IsNeg2()
+numComments=7

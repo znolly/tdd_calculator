@@ -32,20 +32,26 @@ public class CalculatorTest {
     }
     
     @Test
-    public void test2add2equals4() {
+    public void test2add2equals4() { //Add
         int result = calculator.add(2, 2);
         assertEquals(4, result);
     }
     
     @Test
-    public void test2add5equals7() {
+    public void test2add5equals7() { //AddWithDifferentArguments
         int result = calculator.add(2, 5);
         assertEquals(7, result);
     }
     
     @Test
-    public void testSubstract5And3Is2() {
+    public void testSubstract5And3Is2() { //Substract
         int result = calculator.substract(5, 3);
         assertEquals(2, result);
+    }
+    
+    @Test
+    public void testSubstract3And5IsNeg2() { //SubstractReturningNegative
+        int result = calculator.substract(3, 5);
+        assertEquals(-2, result);
     }
 }
