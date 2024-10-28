@@ -54,4 +54,11 @@ public class CalculatorTest {
         int result = calculator.substract(3, 5);
         assertEquals(-2, result);
     }
+    
+    @Test
+     public void test5(){
+        Calculator calculator = new Calculator(-100, 100);
+        int result = calculator.substract(5, 10);
+        assertEquals(-5, result);
+    }
 }
