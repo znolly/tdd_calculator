@@ -19,7 +19,7 @@ public class CalculatorTest {
     Calculator calculator;
     @BeforeEach
     public void setUp() {
-        calculator = new Calculator();
+        calculator = new Calculator(-100, 100);
     }
 
     /**
@@ -56,8 +56,7 @@ public class CalculatorTest {
     }
     
     @Test
-     public void test5(){
-        Calculator calculator = new Calculator(-100, 100);
+     public void testSubstractSettingLimitValues(){//SubstractSettingLimitValues
         int result = calculator.substract(5, 10);
         assertEquals(-5, result);
     }

@@ -6,6 +6,13 @@
  * @version (a version number or a date)
  */
 public class Calculator {
+    private int lowerLimit;
+    private int upperLimit;
+    public Calculator(int minValue, int maxValue){
+        lowerLimit = minValue;
+        upperLimit = maxValue;
+    }
+    
     public int add(int arg1, int arg2) {
         return arg1 + arg2;
     }
