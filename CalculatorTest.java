@@ -60,4 +60,15 @@ public class CalculatorTest {
         int result = calculator.substract(5, 10);
         assertEquals(-5, result);
     }
+    
+    @Test
+    public void test6(){
+        Calculator calculator = new Calculator(-100, 100);
+        try{
+            int result = calculator.substract(10, 150);
+            fail("Exception is not being thrown when exceeding lower limit");
+        }catch(OverflowException e){
+            // Ok, the SUT works as expected
+        }
+    }
 }
