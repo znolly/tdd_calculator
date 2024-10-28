@@ -56,18 +56,18 @@ public class CalculatorTest {
     }
     
     @Test
-     public void testSubstractSettingLimitValues(){//SubstractSettingLimitValues
-        int result = calculator.substract(5, 10);
-        assertEquals(-5, result);
+     public void testSubstractSettingLimitValues(){ //SubstractSettingLimitValues
+       int result = calculator.substract(5, 10);
+       assertEquals(-5, result);
     }
     
     @Test
-    public void test6(){
+    public void testSubstractExcedingLowerLimit(){ //SubstractExcedingLowerLimit
         Calculator calculator = new Calculator(-100, 100);
         try{
             int result = calculator.substract(10, 150);
             fail("Exception is not being thrown when exceeding lower limit");
-        }catch(OverflowException e){
+        }catch(ArithmeticException e){
             // Ok, the SUT works as expected
         }
     }

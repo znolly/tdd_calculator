@@ -16,4 +16,6 @@ comment6.params=
 comment6.target=void\ testSubstract3And5IsNeg2()
 comment7.params=
 comment7.target=void\ testSubstractSettingLimitValues()
-numComments=8
+comment8.params=
+comment8.target=void\ testSubstractExcedingLowerLimit()
+numComments=9

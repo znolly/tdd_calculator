@@ -18,6 +18,10 @@ public class Calculator {
     }
     
     public int substract(int arg1, int arg2) {
-        return arg1 - arg2;
+        int res = arg1 - arg2;
+        if(arg1>100 || arg1<-100 || arg2>100 || arg2<-100){
+            throw new ArithmeticException("Desbordamiento de enteros");
+        }
+        return res;
     }
 }
