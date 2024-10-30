@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Calculator
-comment0.text=\n\ Write\ a\ description\ of\ Calculator\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ Calculator\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=minValue\ maxValue
 comment1.target=Calculator(int,\ int)
 comment2.params=arg1\ arg2
