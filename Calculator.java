@@ -24,5 +24,7 @@ public class Calculator {
         }
         return res;
     }
-
+    public void setUpperLimit(int limit) {
+        upperLimit = limit;
+    }
 }

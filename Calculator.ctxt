@@ -7,4 +7,6 @@ comment2.params=arg1\ arg2
 comment2.target=int\ add(int,\ int)
 comment3.params=arg1\ arg2
 comment3.target=int\ substract(int,\ int)
-numComments=4
+comment4.params=limit
+comment4.target=void\ setUpperLimit(int)
+numComments=5
