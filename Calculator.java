@@ -24,4 +24,20 @@ public class Calculator {
         }
         return res;
     }
+
+    public void setUpperLimit(int limit) {
+        this.upperLimit = limit;
+    }
+
+    public int getUpperLimit() {
+        return this.upperLimit;
+    }
+    
+    public void setLowerLimit(int limit) {
+        this.lowerLimit = limit;
+    }
+
+    public int getLowerLimit() {
+        return this.lowerLimit;
+    }
 }
