@@ -71,9 +71,9 @@ public class CalculatorTest {
             // Ok, the SUT works as expected
         }
     }
-    @Test
-    public void testSetAndGetUpperLimit_FailsInitially() {
+    @Test 
+    public void test7() {
         Calculator calc = new Calculator(-100,100);
-        assertEquals(100, calc.getUpperLimit());
+        assertEquals(100, calc.setUpperLimit(10));
     }
 }
