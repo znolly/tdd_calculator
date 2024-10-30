@@ -27,4 +27,16 @@ public class Calculator {
     public void setUpperLimit(int limit) {
         upperLimit = limit;
     }
+
+    public int getUpperLimit() {
+        return upperLimit;
+    }
+    
+    public void setLowerLimit(int limit) {
+        lowerLimit = limit;
+    }
+
+    public int getLowerLimit() {
+        return lowerLimit;
+    }
 }

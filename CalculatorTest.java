@@ -78,8 +78,7 @@ public class CalculatorTest {
         assertEquals(10, result);
     }
     @Test
-    public void test() {
-        Calculator calculator = new Calculator(-100,100);
+    public void testSetAndGetLimit() {
         calculator.setUpperLimit(10);
         int result = calculator.getUpperLimit();
         assertEquals(10, result);
