@@ -24,6 +24,14 @@ public class Calculator {
             throw new ArithmeticException("Second_argument_exceeds_lower_limit");
         }
         
+        if (arg1 < lowerLimit) {
+            throw new ArithmeticException("First_argument_exceeds_lower_limit");
+        }
+        
+        if (arg2 > upperLimit) {
+            throw new ArithmeticException("Second_argument_exceeds_upper_limit");
+        }
+        
         int result = arg1 + arg2;
         if (result > upperLimit) {
             throw new ArithmeticException("Upper_limit_exceeded");
