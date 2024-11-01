@@ -127,5 +127,16 @@ public class CalculatorTest {
             // La excepción se lanzó correctamente, prueba aprobada
         }
     }
+    
+    @Test
+    public void testArgumentsValidateExceedLimitsInverse() {
+        Calculator calculator = new Calculator(-100, 100);
+        try {
+            calculator.validateArgs(calculator.getLowerLimit() - 1, calculator.getUpperLimit() + 1);
+            fail("This should fail: arguments exceed limits");
+        } catch (ArithmeticException e) {
+            // La excepción se lanzó correctamente, prueba aprobada
+        }
+    }
 
 }
