@@ -13,17 +13,25 @@ public class Calculator {
         upperLimit = maxValue;
     }
     
-    public int add(int arg1, int arg2) {
-        return arg1 + arg2;
-    }
     
-    public int substract(int arg1, int arg2) {
-        int res = arg1 - arg2;
-        if(arg1>100 || arg1<-100 || arg2>100 || arg2<-100){
+    
+    public int add(int arg1, int arg2) {
+        int res = arg1 + arg2;
+        if(arg1>upperLimit || arg1<lowerLimit || arg2>upperLimit || arg2<lowerLimit){
             throw new ArithmeticException("Desbordamiento de enteros");
         }
         return res;
     }
+    
+    public int substract(int arg1, int arg2) {
+        int res = arg1 - arg2;
+        if(arg1>upperLimit || arg1<lowerLimit || arg2>upperLimit || arg2<lowerLimit){
+            throw new ArithmeticException("Desbordamiento de enteros");
+        }
+        return res;
+    }
+    
+    
     public void setUpperLimit(int limit) {
         upperLimit = limit;
     }
@@ -39,4 +47,6 @@ public class Calculator {
     public int getLowerLimit() {
         return lowerLimit;
     }
+    
+    
 }
