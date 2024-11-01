@@ -116,5 +116,16 @@ public class CalculatorTest {
             // Ok, this works
         }
     }
+    
+    @Test
+    public void testArgumentsExceedLimitsOnSubtract() {
+        Calculator calculator = new Calculator(-100, 100);
+        try {
+            calculator.substract(calculator.getUpperLimit() + 1, calculator.getLowerLimit() - 1);
+            fail("This should fail: arguments exceed limits");
+        } catch (ArithmeticException e) { 
+            // La excepción se lanzó correctamente, prueba aprobada
+        }
+    }
 
 }
