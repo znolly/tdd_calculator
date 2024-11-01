@@ -16,11 +16,19 @@ public class Calculator {
     
     
     public int add(int arg1, int arg2) {
-        int res = arg1 + arg2;
-        if(res>upperLimit){
-            throw new ArithmeticException("Desbordamiento de enteros");
+        if (arg1 > upperLimit) {
+            throw new ArithmeticException("First_argument_exceeds_upper_limit");
         }
-        return res;
+        
+        if (arg2 < lowerLimit) {
+            throw new ArithmeticException("Second_argument_exceeds_lower_limit");
+        }
+        
+        int result = arg1 + arg2;
+        if (result > upperLimit) {
+            throw new ArithmeticException("Upper_limit_exceeded");
+        }
+        return result;
     }
     
     public int substract(int arg1, int arg2) {
