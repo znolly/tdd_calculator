@@ -105,4 +105,16 @@ public class CalculatorTest {
             // Ok, esto funciona
         }
     }
+    
+    @Test
+    public void ExceedArgumentsInverse() {
+        Calculator calculator = new Calculator(-100, 100);
+        try {
+            calculator.add(calculator.getLowerLimit() - 1, calculator.getUpperLimit() + 1);
+            fail("THIS_SHOULD_FAIL_:ARGUMENTS_EXCEEDS_LIMITS");
+        } catch (ArithmeticException e) {
+            // Ok, this works
+        }
+    }
+
 }
