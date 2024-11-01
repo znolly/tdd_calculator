@@ -17,7 +17,7 @@ public class Calculator {
     
     public int add(int arg1, int arg2) {
         int res = arg1 + arg2;
-        if(arg1>upperLimit || arg1<lowerLimit || arg2>upperLimit || arg2<lowerLimit){
+        if(res>upperLimit){
             throw new ArithmeticException("Desbordamiento de enteros");
         }
         return res;
@@ -25,7 +25,7 @@ public class Calculator {
     
     public int substract(int arg1, int arg2) {
         int res = arg1 - arg2;
-        if(arg1>upperLimit || arg1<lowerLimit || arg2>upperLimit || arg2<lowerLimit){
+        if(res<lowerLimit){
             throw new ArithmeticException("Desbordamiento de enteros");
         }
         return res;
@@ -47,6 +47,7 @@ public class Calculator {
     public int getLowerLimit() {
         return lowerLimit;
     }
+    
     
     
 }

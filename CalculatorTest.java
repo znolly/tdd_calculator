@@ -95,8 +95,14 @@ public class CalculatorTest {
         }
     }
     
-    
-    
-    
-
+    @Test
+    public void ExceedArguments() {
+        Calculator calculator = new Calculator(-100, 100);
+        try {
+            calculator.add(calculator.getUpperLimit() + 1, calculator.getLowerLimit() - 1);
+            fail("THIS_SHOULD_FAIL:_ARGUMENTS_THAT_EXCEED_LIMITS");
+        } catch (ArithmeticException e) {
+            // Ok, esto funciona
+        }
+    }
 }
