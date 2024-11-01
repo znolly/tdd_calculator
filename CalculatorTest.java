@@ -84,4 +84,19 @@ public class CalculatorTest {
         assertEquals(10, result);
         assertEquals(10, calculator.getUpperLimit());
     }
+    @Test
+    public void addExceedingUpperLimit(){ //SubstractExcedingLowerLimit
+        Calculator calculator = new Calculator(-100, 100);
+        try{
+            int result = calculator.add(10, 150);
+            fail("This_should_fail_vía_if_exceeding_upper_limit");
+        }catch(ArithmeticException e){
+            // Ok, the SUT works as expected
+        }
+    }
+    
+    
+    
+    
+
 }
